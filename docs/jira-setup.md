@@ -90,7 +90,7 @@ Jira is a project management tool that helps teams track issues, manage projects
      - Steps to Reproduce
      - Expected vs Actual
      - Attachments
-     ![alt text](issue_customization.png)
+    ![alt text](issue_customization.png) 
 
 ### **Step 4: Create Custom Fields**
 1. **Add Environment Field**
@@ -132,7 +132,9 @@ Jira is a project management tool that helps teams track issues, manage projects
    - In Progress → In Review
    - In Review → Done
    - Any status → To Do (for reopening)
-![alt text](workflow.png)
+   ![alt text](workflow.png)
+   ![alt text](<adding_column -1.png>)
+
 ---
 
 ## 📝 **Creating Your First Issues**
