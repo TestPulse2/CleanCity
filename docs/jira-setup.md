@@ -57,18 +57,21 @@ Jira is a project management tool that helps teams track issues, manage projects
    - Select "Software development"
    - Choose "Scrum" as the template
    - Click "Next"
+   ![alt text](project_create.png)
 
 3. **Configure Project**
    - **Project name:** CleanCity QA Testing
    - **Project key:** CLEANCITY
    - **Project lead:** [Your name]
    - Click "Create"
+   ![alt text](project_details.png)
 
 ### **Step 3: Configure Issue Types**
 1. **Access Project Settings**
    - Go to your project dashboard
    - Click the gear icon (Settings)
    - Select "Issues"
+   ![alt text](issue_configuring.png)
 
 2. **Verify Issue Types**
    - **Epic:** For major testing phases
@@ -87,6 +90,7 @@ Jira is a project management tool that helps teams track issues, manage projects
      - Steps to Reproduce
      - Expected vs Actual
      - Attachments
+     ![alt text](issue_customization.png)
 
 ### **Step 4: Create Custom Fields**
 1. **Add Environment Field**
@@ -128,7 +132,7 @@ Jira is a project management tool that helps teams track issues, manage projects
    - In Progress → In Review
    - In Review → Done
    - Any status → To Do (for reopening)
-
+![alt text](workflow.png)
 ---
 
 ## 📝 **Creating Your First Issues**
@@ -432,5 +436,64 @@ Jira is a project management tool that helps teams track issues, manage projects
    - Team collaboration evidence
 
 ---
+
+# Week 1 Progress Report – Jira Setup
+
+**Week:** 1 (24–28 June 2025)  
+**Project:** CleanCity QA  
+**Tool:** Jira (Team-managed project)
+
+---
+
+## ✅ Activities Completed
+
+| Activity | Description | Status | Notes |
+|----------|-------------|--------|-------|
+| Jira Project Setup | Created project board and customized columns (To Do, In Progress, Testing, Done) | ✅ Completed | Verified on Jira dashboard |
+| Team Assignments | Added members and defined roles (e.g., QA, Dev, Lead) | ✅ Completed | Each member assigned to issue types |
+| Initial Test Plan | Outlined scope, objectives, and resources in markdown/Word | ✅ Completed | Uploaded separately or in test-docs folder |
+| Testing Environment Setup | Verified tool installation (e.g., Zephyr, test environment URL) | ✅ Completed | Jira plugins and test spaces prepared |
+
+---
+
+## 🗂️ Resources Linked
+
+- [Jira Project Board](https://testpulse2.atlassian.net/jira/software/projects/CQT/boards/2)  
+
+
+
+---
+
+## 📝 Summary
+
+- Jira board created and columns customized  
+- Team structure finalized  
+- Initial test planning initiated (scope, objective, schedule, resources)  
+- Testing environment prepared ( Xray and Zephyr plugin checked)
+
+---
+
+## 📎 Screenshots
+- Jira board created and columns customized  
+![alt text](<adding_column .png>)
+
+- Test Environment setup 
+
+![alt text](z3.png)
+
+![alt text](x_complete.png)
+
+![alt text](x_setup.png)
+
+![alt text](z_setup.png)
+
+![alt text](z2.png)
+
+- Team assignments and roles 
+
+![alt text](assigning_roles.png)
+
+---
+
 
 **Remember: Jira is your project management backbone. Use it consistently and effectively to demonstrate your professional testing approach!** 🎯✨ 
