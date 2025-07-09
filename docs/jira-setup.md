@@ -228,6 +228,10 @@ Jira is a project management tool that helps teams track issues, manage projects
    - Review defect metrics
    - Update project dashboard
 
+   ![alt text](Stories_created.png)
+   ![alt text](story1.png)
+
+
 ---
 
 ## 📊 **Jira Reports and Dashboards**
