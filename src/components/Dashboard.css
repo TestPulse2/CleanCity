@@ -110,3 +110,16 @@
     width: 100%;
   }
 } 
+.cancel-button {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+.cancel-button:hover {
+  background: darkred;
+}

@@ -1,3 +1,4 @@
+import { validatePickupRequest } from '../tests/schedulePickups';
 import React, { useState, useRef, useEffect } from 'react';
 import './Home.css';
 import dataService from '../services/dataService';
@@ -17,14 +18,22 @@ export default function Home() {
     if (nameRef.current) nameRef.current.focus();
   }, []);
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    setError('');
-    setSuccess('');
-    if (!name || !email || !location || !wasteType || !preferredDate) {
-      setError('Please fill in all required fields.');
-      return;
-    }
+ const handleSubmit = e => {
+  e.preventDefault();
+  setError('');
+  setSuccess('');
+
+  const result = validatePickupRequest({ name, email, location, wasteType, preferredDate });
+
+  if (!result.success) {
+    setError(result.errors.join(' '));
+    return;
+  }
+
+  setSuccess(result.message);
+  // continue with clearing form or sending data
+};
+
     // Simulate request submission
     setSuccess('Your waste pickup request has been submitted!');
     setName('');
@@ -112,4 +121,3 @@ export default function Home() {
       </div>
     </div>
   );
-} 

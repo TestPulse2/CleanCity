@@ -1,6 +1,17 @@
 import React from 'react';
 import './Dashboard.css';
 
+function handleCancelRequest(requestId) {
+  const allRequests = getRequests();
+  const updated = allRequests.map(r =>
+    (r.id || allRequests.indexOf(r) + 1) === requestId
+      ? { ...r, status: 'Cancelled' }
+      : r
+  );
+  localStorage.setItem('pickupRequests', JSON.stringify(updated));
+  window.location.reload();
+}
+
 function getRequests() {
   const saved = localStorage.getItem('pickupRequests');
   return saved ? JSON.parse(saved) : [];
@@ -39,6 +50,10 @@ function getUserActivity() {
 
 export default function Dashboard() {
   const requests = getRequests();
+  const updatedRequests = requests.map(r => ({
+  ...r,
+  status: r.status || 'Pending'
+ }));
   const blogPosts = getBlogPosts();
   const communityPosts = getCommunityPosts();
   const requestsPerMonth = getRequestsPerMonth(requests);
@@ -71,6 +86,47 @@ export default function Dashboard() {
         </div>
         <div className="dashboard-charts">
           <div className="dashboard-chart">
+            <h3 style={{ marginTop: '2rem' }}>Manage Pickup Requests</h3>
+        <table className="dashboard-table">
+          <thead>
+            <tr>
+              <th>Request ID</th>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Waste Type</th>
+              <th>Preferred Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+        <tbody>
+          {updatedRequests.map((req, index) => (
+            <tr key={index} style={{ opacity: req.status === 'Cancelled' ? 0.5 : 1 }}>
+              <td>{req.id || index + 1}</td>
+              <td>{req.name}</td>
+              <td>{req.location}</td>
+              <td>{req.wasteType}</td>
+              <td>{req.preferredDate}</td>
+              <td style={{ color: req.status === 'Cancelled' ? 'red' : '#222' }}>
+                {req.status}
+              </td>
+              <td>
+                {req.status !== 'Cancelled' ? (
+                  <button
+                    className="cancel-button"
+                    onClick={() => handleCancelRequest(req.id || index + 1)}
+                    >
+                    Cancel
+                  </button>
+                ) : (
+                  <span>--</span>
+                )}
+              </td>
+            </tr>
+           ))}
+        </tbody>
+        </table>
+
             <h3>Requests Per Month</h3>
             <BarChart data={requestsPerMonth} />
           </div>
