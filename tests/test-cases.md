@@ -16,15 +16,15 @@
 
 ## Authentication
 - [X] Users can register with valid inputs
-- [] Error shown for password mismatch
+- [X] Error shown for password mismatch
 - [X] Login works for valid credentials
 - [X] Incorrect login shows error
 - [X] Logout button works
 - [X] Session state updates (hide/show links)
 
 ## Admin Functionality
-- [ ] Admin login shows Admin Panel
-- [ ] Admin can view requests
-- [ ] Admin can update request statuses
-- [ ] Non-admins cannot access admin features
+- [X] Admin login shows Admin Panel
+- [X] Admin can view requests
+- [X] Admin can update request statuses
+- [X] Non-admins cannot access admin features
 
