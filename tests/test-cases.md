@@ -27,40 +27,42 @@
 - [X] Admin can view requests
 - [X] Admin can update request statuses
 - [X] Non-admins cannot access admin features
-Waste Management: 
+
+## Waste Management: 
 * Schedule Pickups
-1. It should ensure valid scheduling with correct date, time and location.
-2. It should ensure no invalid inputs e.g empty fields etc.
-3. It should reject requests wih past dates.
-4. It should ensure that duplicate pick ups are not allowed. 
+- [X] It should ensure valid scheduling with correct date, time and location.
+- [X] It should ensure no invalid inputs e.g empty fields etc.
+- [X] It should reject requests wih past dates.
+- [X] It should ensure that duplicate pick ups are not allowed. 
 
 * View History
-1. It should return all scheduled pickups in tables
-2. It should return an empty list if no pickups are in local storage
-3. It should exclude failed or duplicate entries from history
-4. It should filter requests by location and status
+- [X] It should return all scheduled pickups in tables
+- [X] It should return an empty list if no pickups are in local storage
+- [X] It should exclude failed or duplicate entries from history
+- [X] It should filter requests by location and status
 
 * Cancel Requests
-1. It should mark the correct request as cancelled by ID.
-2. It should not modify other requests.
-3. It should not show if request ID does not exist.
-4. It should assign IDs correctly ifmising and still cancel.
+- [X] It should mark the correct request as cancelled by ID.
+- [X] It should not modify other requests.
+- [X] It should not show if request ID does not exist.
+- [X] It should assign IDs correctly ifmising and still cancel.
 
-Admin Funtion:
+## Admin Funtion:
 * Content Moderation
+
 updateRequestStatus
-1. It should update the status of a request when given a valid ID and status.
-2. It should return the original list if the ID is missing.
-3. It should return the original list if the status is missing.
+- [X] It should update the status of a request when given a valid ID and status.
+- [X] It should return the original list if the ID is missing.
+- [X] It should return the original list if the status is missing.
 
 deleteRequest
-1. It should delete a request when confirmed via the confirmation function.
-2. It should not delete the request if confirmation is declined.
-3. It should return the original list if the ID is missing.
+- [X] It should delete a request when confirmed via the confirmation function.
+- [X] It should not delete the request if confirmation is declined.
+- [X] It should return the original list if the ID is missing.
 
 countMissedRequests
-1. It should count how many requests have the status “Missed”.
-2. It should return zero if no requests are marked as “Missed”.
+- [X] It should count how many requests have the status “Missed”.
+- [X] It should return zero if no requests are marked as “Missed”.
 
 | TCID   | Feature           | Description            | Steps                              | Expected Results                    |
 |--------|-------------------|------------------------|------------------------------------|-------------------------------------|
