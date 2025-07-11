@@ -9,3 +9,8 @@
 | BUG001 |Schedule Pickup| No error on entry of past dates  | Enter a past date eg 2016,click submit | Message: Please enter a valid date   | "Submitted Successfully"          | High     | Open   |
 | BUG002 |View History   | Entries filtered on command      | Open filter dropdown, select Eldoret    | RequestIDs for Eldoret displayed       | Displays RequestIDs for Nairobi     | Medium   | Open   |
 | BUG003 |Admin Page  | Warning without request to fill input  | Log in as Admin, update reuests status| Status updated successfully update next requests  | "Please fill in required input    | High     | Open   |
+
+
+![alt text](<Screenshot (53).png>)
+![alt text](<Screenshot (46).png>)
+![alt text](<Screenshot (45).png>)
