@@ -86,4 +86,89 @@ Jrn Tester Ashlyne Muthoni: Systematic Testing.
 Jrn Tester Gloria Titus: Slide and Video Presentation.
 
 ### **Deliverables**
-Test summary reports, bug logs, regression reports, and improvement insights.
+- Before Testing:
+Test Plan Document: Detailed test plan, including scope, objectives, strategy, and resources.
+Test Cases: Specific test cases for each feature, outlining the steps to be executed and the expected results.
+Test Data: Prepared data sets for testing various scenarios, such as valid/invalid user inputs, loggin successful, Pickup schedules, and many more. 
+Test Environment Setup: Setup of tools like Jira, Jest, and Selenium.
+- During Testing:
+Execution Logs: Records of all test cases executed, including pass/fail status.
+Defect Reports: Documentation of any issues found, including steps to reproduce, screenshots, and severity.
+Daily/Weekly Status Reports: Updates on testing progress, including completed tests, open defects, and risks.
+- After Testing:
+Final Test Report: Summary of the testing activities, including overall test coverage, defect trends, and final recommendations.
+Defect Log: Comprehensive list of all identified defects, including their status (open, fixed, closed) and resolution.
+Test Closure Report: Document indicating that all planned tests have been completed, and the software is ready for release.
+    
+## **Test Strategy**
+- Methods that will be used are manual testing and automation testing.
+- Techniques that will be used under manual test: Black-box and White-box.
+- Black-Box: Both Functional and Non-Functional testing.
+- White box: Both Functional and Non-Functional testing.
+- Functional: Unit testing, Integration testing, System testing, Acceptance testing.
+- Non-Functional testing: Peformance teting, Usability testing, Compatibility testing.
+
+  ## **Plan the test Environment and Test Data**
+  - Jira
+Test Environment
+
+Web-based access (Jira Cloud/Server)
+
+Create test project with workflows (To Do → In Progress → Done)
+
+Integrate with GitHub and test tools (Zephyr, Xray)
+
+Set user roles (Tester, Developer, Admin) 
+
+Test Data
+Test cases (manual/imported)
+
+Sample bugs and requirements
+
+Test user accounts for role validation
+
+Reports to test filters and dashboards
+
+- Selenium
+  
+Test Environment
+
+Install Selenium WebDriver with language binding (Python, JS, etc.)
+
+Use browsers (Chrome, Firefox)
+
+Required drivers: ChromeDriver, GeckoDriver
+
+Test Data
+
+Valid/invalid login credentials
+
+Sample form inputs (text, dropdowns)
+
+Mock API responses if needed
+
+- Jest
+
+Test Environment
+ 
+Install via npm install --save-dev jest
+
+Run in VS Code or terminal (npm test)
+
+Use mocks (jest.fn())
+
+Enable code coverage with --coverage
+
+Test Data
+Mock objects ({ username: 'test' })
+
+JSON fixtures for repeated tests
+
+Edge case values (null, empty strings)
+
+Mock API responses
+
+
+  
+
+  
