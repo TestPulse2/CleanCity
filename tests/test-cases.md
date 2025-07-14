@@ -64,6 +64,56 @@ countMissedRequests
 - [X] It should count how many requests have the status “Missed”.
 - [X] It should return zero if no requests are marked as “Missed”.
 
+## Content Features:
+* Community Interactions
+
+- [X] Like Functionality
+> Toggle state for post likes correctly.
+> Ensure likes are calculated based on existing state and toggle.
+
+- [X] Comment Functionality
+> Add comments per post ID.
+> Validate empty comment input is ignored.
+> Ensure comment structure includes ID, content, author, and date.
+
+- [X] Persistent Storage
+> Check updates to localStorage for posts, likes, and comments.
+
+- [X] UI Logic (Simulated)
+> Toggle comment visibility flag per post.
+> Verify like button state mapping to toggled value.
+> Validate comment count display.
+
+* Blog Posts
+- [X] Search Filter Functionality
+> Validate that posts are filtered based on title or summary text matching the search input.
+- [X] Tag Filter Accuracy
+> Confirm that filtering by selected tag returns only relevant posts.
+- [X] Featured Posts Selection
+> Check that posts with featured: true are identified and displayed appropriately.
+- [X] Unique Tag Extraction
+> Ensure extractTags() returns a distinct set of all tags from existing posts.
+- [X] Empty Result Handling
+> Verify that no posts are displayed when the search and tag filters yield no match.
+
+* Comments
+- [X] Comment Posting
+> Test that new comments are added only when text is non-empty.
+> Ensure character limits (max 200) are respected.
+> Confirm input is cleared after successful posting.
+- [X] Like Functionality
+> Validate that clicking "Like" increases the counter.
+> Ensure likes don’t change for reported comments.
+- [X] Report Functionality
+> Confirm reported flag toggles correctly.
+> Test that "Report" button disables after use.
+> Validate visual changes for reported comments.
+- [X] Persistent Storage
+> Assert that localStorage updates reflect added, liked, or reported comments.
+- [X] Fallback Rendering
+> Check rendering of "No comments yet" when list is empty.
+> Validate comment structure rendering (user, text, likes, actions).
+
 | TCID   | Feature           | Description            | Steps                              | Expected Results                    |
 |--------|-------------------|------------------------|------------------------------------|-------------------------------------|
 | TC001  |Schedule Pickups   |Validate Pickup Request |Input details on home page          |Request Submitted Successfully       |
